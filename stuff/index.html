@@ -7,9 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-<link rel="stylesheet" href="gallery-grid.css">
+
 
 <style>
 body,h1 {font-family: "Montserrat", sans-serif}
@@ -47,56 +45,6 @@ img {margin-bottom: -7px}
 
 <!-- Photo Grid -->
 <div class="w3-row-padding" id="myGrid" style="margin-bottom:128px">
-  <div class="tz-gallery">
-
-      <div class="row">
-          <div class="col-sm-6 col-md-4">
-              <a class="lightbox" href="img/edna.jpg">
-                  <img src="https://drscdn.500px.org/photo/265855043/m%3D900/v2?user_id=28970613&webp=true&sig=ee9abaf3917d86a4f743506b3964c17d6c4396fcdeeb9e4041165b7b05bc8f53" alt="Edna">
-              </a>
-          </div>
-          <div class="col-sm-6 col-md-4">
-              <a class="lightbox" href="img/frontcircle.jpg">
-                  <img src="https://drscdn.500px.org/photo/265855015/m%3D900/v2?user_id=28970613&webp=true&sig=de6275bf6a2da77ff00eab2a4019de6834d5c5591a1a332d6331e41283943f2f" alt="frontcircle">
-              </a>
-          </div>
-          <div class="col-sm-12 col-md-4">
-              <a class="lightbox" href="../images/tunnel.jpg">
-                  <img src="../images/tunnel.jpg" alt="Tunnel">
-              </a>
-          </div>
-          <div class="col-sm-6 col-md-4">
-              <a class="lightbox" href="../images/coast.jpg">
-                  <img src="../images/coast.jpg" alt="Coast">
-              </a>
-          </div>
-          <div class="col-sm-6 col-md-4">
-              <a class="lightbox" href="../images/rails.jpg">
-                  <img src="../images/rails.jpg" alt="Rails">
-              </a>
-          </div>
-          <div class="col-sm-6 col-md-4">
-              <a class="lightbox" href="../images/traffic.jpg">
-                  <img src="../images/traffic.jpg" alt="Traffic">
-              </a>
-          </div>
-          <div class="col-sm-6 col-md-4">
-              <a class="lightbox" href="../images/rocks.jpg">
-                  <img src="../images/rocks.jpg" alt="Rocks">
-              </a>
-          </div>
-          <div class="col-sm-6 col-md-4">
-              <a class="lightbox" href="../images/benches.jpg">
-                  <img src="../images/benches.jpg" alt="Benches">
-              </a>
-          </div>
-          <div class="col-sm-6 col-md-4">
-              <a class="lightbox" href="../images/sky.jpg">
-                  <img src="../images/sky.jpg" alt="Sky">
-              </a>
-          </div>
-      </div>
-
   </div>
   <div class="w3-third">
     <img src="https://drscdn.500px.org/photo/265855049/m%3D900/v2?user_id=28970613&webp=true&sig=7e2f98b7c2dffcdfc9d5db43e50f31a15358ed9ff78aaa89cbe648cdb48d195c" style="width:100%">
@@ -139,7 +87,7 @@ img {margin-bottom: -7px}
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
 <script>
-    baguetteBox.run('.tz-gallery');
+    baguetteBox.run('.w3-third');
 // Open and close sidebar
 function w3_open() {
     document.getElementById("mySidebar").style.width = "100%";
