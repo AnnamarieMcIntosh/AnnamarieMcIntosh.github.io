@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
 <title>ANNALOVESDISNEY</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 <style>
 body,h1 {font-family: "Montserrat", sans-serif}
 img {margin-bottom: -7px}
@@ -45,8 +42,8 @@ img {margin-bottom: -7px}
 
 <!-- Photo Grid -->
 <div class="w3-row-padding" id="myGrid" style="margin-bottom:128px">
-  </div>
   <div class="w3-third">
+    <img src="https://drscdn.500px.org/photo/265855043/m%3D900/v2?user_id=28970613&webp=true&sig=ee9abaf3917d86a4f743506b3964c17d6c4396fcdeeb9e4041165b7b05bc8f53" style="width:100%">
     <img src="https://drscdn.500px.org/photo/265855049/m%3D900/v2?user_id=28970613&webp=true&sig=7e2f98b7c2dffcdfc9d5db43e50f31a15358ed9ff78aaa89cbe648cdb48d195c" style="width:100%">
     <img src="https://drscdn.500px.org/photo/265855031/m%3D900/v2?user_id=28970613&webp=true&sig=418b7d343e2e980619a11b298b13c010654255cc7c454fd7a89b6840d22349b0" style="width:100%">
     <img src="https://drscdn.500px.org/photo/265855037/m%3D900/v2?user_id=28970613&webp=true&sig=20e15e8b211a5f2c3853dedd5a584444f7ead08ad13b5be3eb59a0cf348d2483" style="width:100%">
@@ -85,15 +82,22 @@ img {margin-bottom: -7px}
   <i class="fa fa-twitter w3-hover-opacity"></i>
 
 </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+
 <script>
-    baguetteBox.run('.w3-third');
+// Toggle grid padding
+function myFunction() {
+    var x = document.getElementById("myGrid");
+    if (x.className === "w3-row") {
+        x.className = "w3-row-padding";
+    } else {
+        x.className = x.className.replace("w3-row-padding", "w3-row");
+    }
+}
 // Open and close sidebar
 function w3_open() {
     document.getElementById("mySidebar").style.width = "100%";
     document.getElementById("mySidebar").style.display = "block";
 }
-
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
 }
